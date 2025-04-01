@@ -1,7 +1,7 @@
 name: Terraform Destroy
 
 on: 
-  workflos_dispatch:
+  workflow_dispatch:
     inputs:
       logLevel:
         description: 'Log level'
