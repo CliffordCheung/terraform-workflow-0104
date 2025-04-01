@@ -31,7 +31,8 @@ resource "aws_s3_bucket_policy" "allow_public_access" {
 			"Principal": "*",
 			"Effect": "Allow",
 			"Action": [
-				"s3:GetObject"
+				"s3:GetObject",
+                "s3:PutObject"
 			],
 			"Resource": ["arn:aws:s3:::clifford-terraform.sctp-sandbox.com/*"]
 		}
