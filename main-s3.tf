@@ -1,5 +1,5 @@
 locals {
-  name_prefix = "cliffords3"
+  name_prefix = "clifford-terraform"
 }
 
 resource "aws_s3_bucket" "static_bucket" {
@@ -33,7 +33,7 @@ resource "aws_s3_bucket_policy" "allow_public_access" {
 			"Action": [
 				"s3:GetObject"
 			],
-			"Resource": ["arn:aws:s3:::cliffords3.sctp-sandbox.com/*"]
+			"Resource": ["arn:aws:s3:::clifford-terraform.sctp-sandbox.com/*"]
 		}
 	]
     }
